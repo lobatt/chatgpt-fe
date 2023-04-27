@@ -8,7 +8,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessages([...messages, { type: 'user', content: input }]);
+    setMessages([...messages, { role: 'user', content: input }]);
 
     try {
       const response = await axios.post(
@@ -30,7 +30,7 @@ function App() {
       );
 
       const aiResponse = response.data.choices[0].message.content.trim();
-      setMessages([...messages, { role: 'assistant', content: aiResponse }]);
+      setMessages([...messages, { role: 'user', content: input }, { role: 'assistant', content: aiResponse }]);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -43,7 +43,7 @@ function App() {
       <h1>ChatGPT Frontend</h1>
       <div className="chat-container">
         {messages.map((message, index) => (
-          <div key={index} className={`message ${message.type}`}>
+          <div key={index} className={`message ${message.role}`}>
             {message.content}
           </div>
         ))}
