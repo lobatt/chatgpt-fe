@@ -1,5 +1,7 @@
 # A ChatGPT frontend scaffolded by ChatGPT and Create React App and modified by Human
 
+![image](https://user-images.githubusercontent.com/1172678/234929817-01d5bcd8-d81d-4ae8-b651-088787de75fa.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
