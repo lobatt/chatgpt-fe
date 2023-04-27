@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# A ChatGPT frontend scaffolded by ChatGPT and Create React App and modified by Human
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
